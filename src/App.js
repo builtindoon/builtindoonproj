@@ -23,7 +23,7 @@ return (
         <Route path='/team' element={<Team/>} />
         <Route path='/contact' element={<Contact/>} />
         <Route path='/sign-up' element={<SignUp/>} />
-    </Routes>
+    </Routes>   
     </Router>
 );
 }
