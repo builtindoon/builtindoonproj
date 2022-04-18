@@ -8,9 +8,9 @@ import Services from './views/services';
 import SignUp from './views/signup';
 import Contact from './views/contact';
 import Team from './component/page/teams';
-import Skills from './component/page/skills'
-import Navbar from './components/Navbar'
- import Registration from './views/register'
+import Skills from './component/page/skills';
+import Navbar from './components/Navbar';
+ import NameForm from './views/nameform';
   
 function App() {
 return (
@@ -24,7 +24,7 @@ return (
         <Route path='/team' element={<Team/>} />
         <Route path='/contact' element={<Contact/>} /> 
         <Route path='/signup' element={<SignUp/>} />
-        <Route path='/register' element={<Registration/>} />
+        <Route path='/register' element={<NameForm/>} />
 
     </Routes>   
     </Router>
