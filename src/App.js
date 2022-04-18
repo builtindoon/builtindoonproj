@@ -10,6 +10,7 @@ import Contact from './views/contact';
 import Team from './component/page/teams';
 import Skills from './component/page/skills'
 import Navbar from './components/Navbar'
+ import Registration from './views/register'
   
 function App() {
 return (
@@ -17,12 +18,16 @@ return (
     <Navbar />
     <Routes>
         <Route exact path='/' element={<Home />} />
-       <Route path='/about' element={<About/>} />
+        <Route path='/about' element={<About/>} />
         <Route path='/services' element={<Services/>} />
         <Route path='/skills' element={<Skills/>} />
         <Route path='/team' element={<Team/>} />
-        <Route path='/contact' element={<Contact/>} />
-        <Route path='/sign-up' element={<SignUp/>} />
+        <Route path='/contact' element={<Contact/>} /> 
+        <Route path='/signup' element={<SignUp/>} />
+        <Route path='/signup' element={<SignUp/>} />
+        <Route path='/register' element={<Registration/>} />
+       
+
     </Routes>   
     </Router>
 );

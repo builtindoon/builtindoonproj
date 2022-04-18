@@ -1,12 +1,12 @@
+import React from "react";
 import {useState} from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
 
 
-function App() {
+function Registration() {
   const initialValues={name:"",firstname:"",lastname:"",phonen:"",email:"",addres:"",city:""};
   const[formValues,setFormValues]=useState(initialValues);
 
@@ -15,12 +15,14 @@ function App() {
     setFormValues({ ...formValues,[name]: value });
     console.log(formValues);
 
-  };
+  }; 
   const handleSubmit=(e) => {
     e.preventDefault();
   };
-  return (
 
+  
+  const Registration = () =>{
+return (
     <div className="container">
       <h1>User Registration</h1>
     <Form>
@@ -94,8 +96,8 @@ function App() {
   </Button>
 </Form>
 </div>
+    )
+  };
 
-  );
-}
-
-export default App;
+};
+export default Registration;
