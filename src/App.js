@@ -24,9 +24,7 @@ return (
         <Route path='/team' element={<Team/>} />
         <Route path='/contact' element={<Contact/>} /> 
         <Route path='/signup' element={<SignUp/>} />
-        <Route path='/signup' element={<SignUp/>} />
         <Route path='/register' element={<Registration/>} />
-       
 
     </Routes>   
     </Router>
