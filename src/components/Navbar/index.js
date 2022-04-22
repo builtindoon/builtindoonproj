@@ -29,8 +29,8 @@ const Navbar = () => {
             Sign up
             </NavLink>
             <NavLink to="/EU" activeStyle>
-            EU
             </NavLink>
+
          </NavMenu>
       </Nav>
     </>

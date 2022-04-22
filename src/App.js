@@ -16,7 +16,7 @@ import Skills from './component/page/skills';
 import EU from './views/eu';
 import Navbar from './components/Navbar';
  import NameForm from './views/nameform';
-  
+import Addlocalshop from './views/Addlocalshop'
 function App() {
 return (
     <Router>
@@ -30,8 +30,12 @@ return (
         <Route path='/contact' element={<Contact/>} /> 
         <Route path='/signup' element={<SignUp/>} />
         <Route path='/register' element={<NameForm/>} />
+<<<<<<< HEAD
         <Route path='/EU' element={<EU/>} />
 
+=======
+        <Route path='/addlocalshop' element={<Addlocalshop/>} />
+>>>>>>> a20ea38c5ef416bc9fcfb649b0ca2356508a58bb
     </Routes>   
     </Router>
 );
