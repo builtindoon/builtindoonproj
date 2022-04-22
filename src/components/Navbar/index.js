@@ -29,8 +29,11 @@ const Navbar = () => {
             Sign up
             </NavLink>
             <NavLink to="/EU" activeStyle>
+              EU
             </NavLink>
-
+            <NavLink to="/Addlocalshop" activeStyle>
+              Local Store
+            </NavLink>
          </NavMenu>
       </Nav>
     </>

@@ -30,12 +30,8 @@ return (
         <Route path='/contact' element={<Contact/>} /> 
         <Route path='/signup' element={<SignUp/>} />
         <Route path='/register' element={<NameForm/>} />
-<<<<<<< HEAD
         <Route path='/EU' element={<EU/>} />
-
-=======
         <Route path='/addlocalshop' element={<Addlocalshop/>} />
->>>>>>> a20ea38c5ef416bc9fcfb649b0ca2356508a58bb
     </Routes>   
     </Router>
 );

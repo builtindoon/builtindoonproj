@@ -1,6 +1,8 @@
 import React, { Component } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-class NameForm extends React.Component {
+
+class Addlocalshop extends React.Component {
     constructor(props) {
       super(props);
       this.state = {value: ''};
@@ -60,3 +62,5 @@ class NameForm extends React.Component {
       );
     }
   }
+
+  export default Addlocalshop;
