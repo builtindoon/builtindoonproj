@@ -11,7 +11,7 @@ import Team from './component/page/teams';
 import Skills from './component/page/skills';
 import Navbar from './components/Navbar';
  import NameForm from './views/nameform';
-  
+import Addlocalshop from './views/Addlocalshop'
 function App() {
 return (
     <Router>
@@ -25,7 +25,7 @@ return (
         <Route path='/contact' element={<Contact/>} /> 
         <Route path='/signup' element={<SignUp/>} />
         <Route path='/register' element={<NameForm/>} />
-
+        <Route path='/addlocalshop' element={<NameForm/>} />
     </Routes>   
     </Router>
 );
