@@ -3,7 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route}
     from 'react-router-dom';
 import Home from './views/home';
-import About from './views/about';
+import About from './component/page/About';
 import Services from './views/services';
 import SignUp from './views/signup';
 import Contact from './views/contact';
@@ -11,7 +11,7 @@ import Team from './component/page/teams';
 import Skills from './component/page/skills';
 import Navbar from './components/Navbar';
  import NameForm from './views/nameform';
-import Addlocalshop from './views/Addlocalshop'
+import Addlocalshop from './views/Addlocalshop';
 function App() {
 return (
     <Router>

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class NameForm extends React.Component {
+class Addlocalshop extends React.Component {
     constructor(props) {
       super(props);
       this.state = {value: ''};
@@ -60,3 +60,5 @@ class NameForm extends React.Component {
       );
     }
   }
+  
+  export default  Addlocalshop;
