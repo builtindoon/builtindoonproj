@@ -25,7 +25,7 @@ return (
         <Route path='/contact' element={<Contact/>} /> 
         <Route path='/signup' element={<SignUp/>} />
         <Route path='/register' element={<NameForm/>} />
-        <Route path='/addlocalshop' element={<NameForm/>} />
+        <Route path='/addlocalshop' element={<Addlocalshop/>} />
     </Routes>   
     </Router>
 );
