@@ -1,4 +1,8 @@
 import React, { Component } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+import { FormCheck, FormLabel } from "react-bootstrap";
 
 class Addlocalshop extends React.Component {
     constructor(props) {
@@ -15,50 +19,55 @@ class Addlocalshop extends React.Component {
   
     render() {
       return (
-        <form onShopName={this.handleShopName}>
-          <label>
-            ShopName:
-            <input type="text" value={this.state.value} onChange={this.handleChange} />        </label>
-          <input type="shopname" value="Shopname" />
-          <lable>
-            ShopAddress:
-            <input type="text" value={this.state.value} onChange={this.handleChange} />     </lable>
-            <input type="shopaddress" value="Shopaddress" />
-            <label>State</label>
-            <select>
-               <option value="delhi">Delhi</option>
-               <option value="pune">Pune</option>
-               <option value="noida">Noida</option>
-            </select>
-            <label>District</label>
-            <select>
-               <option value="dehradun">dehradun</option>
-               <option value="varanasi">Varanasi</option>
-               <option value="lucknow">Lucknow</option>
-            </select>
-            <label>
-            Pincode:
-            <input type="text" value={this.state.value} onChange={this.handleChange} />        </label>
-          <input type="pincode" value="Pincode" />
-          <label>
-          Landmark:
-          <input type="text" value={this.state.value} onChange={this.handleChange} />        </label>
-        <input type="landmark" value="Landmark" />
-          <label>
-          Phone Number:
-          <input type="text" value={this.state.value} onChange={this.handleChange} />        </label>
-        <input type="number" value="Number" />
-         <label>
-        <p>Delivery Provided</p>
-        <input type="radio" /> Yes</label>
-        <label>
-        <input type="radio" />No</label>
-        <a href="/ addlocalshop">Addlocalshop</a>
-
-         </form>
-         
-      );
-    }
-  }
+        <div className="container">
+        <h1>Addlocalshop </h1>
+       
+        <Form>
+    <Form.Group className="mb-3">
+      <Form.Label>ShopName</Form.Label>
+      <Form.Control type="text" />
+      </Form.Group>
+      <Form.Group className="mb-3">
+      <Form.Label>ShopAddress</Form.Label>
+      <Form.Control type="text" />
+      </Form.Group>
+      <Form.Group className="mb-3">
+      <Form.Label>State</Form.Label>
+      <Form.Select>Dehli,Pune,Mumbai,Bengaluru</Form.Select>
+      </Form.Group>
+      <Form.Group className="mb-3">
+      <Form.Label>District</Form.Label>
+      <Form.Select>Bihar,Dehradun,Lucknow</Form.Select>
+      </Form.Group>
+      <Form.Group className="mb-3">
+      <Form.Label>Pincode</Form.Label>
+      <Form.Control type="text" />
+      </Form.Group>
+      
+      <Form.Group className="mb-3">
+      <Form.Label>Landmark</Form.Label>
+      <Form.Control type="text" />
+      </Form.Group>
+     
+      <>
+      <Form.Label>Delivery Provided</Form.Label>
   
-  export default  Addlocalshop;
+     <Form.Check type="radio" aria-label="radio Yes"/>
+    
+     <Form.Check type="radio" aria-label="radio No"/>
+     </>
+     <Form.Label>Items to be added</Form.Label>
+     <br></br>
+     <Button variant="none" type="submit">
+     Add Store
+   </Button>
+   <Button variant="success" type="submit">
+     Cancel
+   </Button>
+   </Form>
+   </div>
+       )
+     };
+ }
+
+ export default Addlocalshop;
