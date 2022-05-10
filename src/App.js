@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route}
-    from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'; 
 import Home from './views/home';
 import About from './component/page/About';
 import Services from './views/services';
@@ -10,7 +9,7 @@ import Contact from './views/contact';
 import Team from './component/page/teams';
 import Skills from './component/page/skills';
 import Navbar from './components/Navbar';
- import NameForm from './views/nameform';
+ import Registration from './views/register';
 import Addlocalshop from './views/Addlocalshop';
 function App() {
 return (
@@ -24,12 +23,12 @@ return (
         <Route path='/team' element={<Team/>} />
         <Route path='/contact' element={<Contact/>} /> 
         <Route path='/signup' element={<SignUp/>} />
-        <Route path='/register' element={<NameForm/>} />
+        <Route path='/register' element={<Registration/>} />
         <Route path='/addlocalshop' element={<Addlocalshop/>} />
     </Routes>   
     </Router>
-);
-}
+     );
+    }   
   
 export default App;
   
