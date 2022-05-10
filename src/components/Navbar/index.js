@@ -34,6 +34,9 @@ const Navbar = () => {
             <NavLink to="/Addlocalshop" activeStyle>
               Local Store
             </NavLink>
+            <NavLink to="/ForgotPassword" activeStyle>
+              ForgotPassword
+            </NavLink>
          </NavMenu>
       </Nav>
     </>

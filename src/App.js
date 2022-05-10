@@ -16,7 +16,8 @@ import Skills from './component/page/skills';
 import EU from './views/eu';
 import Navbar from './components/Navbar';
  import NameForm from './views/nameform';
-import Addlocalshop from './views/Addlocalshop'
+import Addlocalshop from './views/Addlocalshop';
+import ForgotPassword from './views/ForgotPassword';
 function App() {
 return (
     <Router>
@@ -32,6 +33,7 @@ return (
         <Route path='/register' element={<NameForm/>} />
         <Route path='/EU' element={<EU/>} />
         <Route path='/addlocalshop' element={<Addlocalshop/>} />
+        <Route path='/ForgotPassword' element={<ForgotPassword/>} />
     </Routes>   
     </Router>
 );
