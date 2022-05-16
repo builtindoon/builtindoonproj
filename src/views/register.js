@@ -69,4 +69,3 @@ const Registration = () => {
 };
 
 export default Registration;
-// time do mai google krta hu

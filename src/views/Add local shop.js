@@ -20,20 +20,24 @@ class Addlocalshop extends React.Component {
     render() {
       return (
         <div className="container">
-        <h1>Addlocalshop </h1>
+        <h1>Add local shop </h1>
        
         <Form>
     <Form.Group className="mb-3">
-      <Form.Label>ShopName</Form.Label>
+      <Form.Label>Shop Name</Form.Label>
       <Form.Control type="text" />
       </Form.Group>
       <Form.Group className="mb-3">
-      <Form.Label>ShopAddress</Form.Label>
+      <Form.Label>Shop Address</Form.Label>
       <Form.Control type="text" />
       </Form.Group>
       <Form.Group className="mb-3">
       <Form.Label>State</Form.Label>
-      <Form.Select>Dehli,Pune,Mumbai,Bengaluru</Form.Select>
+      <select>
+  <option value="IND">India</option>
+  <option value="ALA">Aland Islands</option>
+  <option value="ALB">Albania</option>
+</select>
       </Form.Group>
       <Form.Group className="mb-3">
       <Form.Label>District</Form.Label>

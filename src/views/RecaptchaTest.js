@@ -38,7 +38,7 @@ function Captcha() {
             element.disabled = true;
             element.style.cursor = "not-allowed";
             inputData.style.display = "none";
-            
+
           }
           else
           {
@@ -46,7 +46,7 @@ function Captcha() {
             element.style.cursor = "not-allowed";
             element.innerHTML  = "Not Matched";
             element.disabled = true;
-            
+
             var myFunction = function(){
               element.style.backgroundColor   = "#007bff";
               element.style.cursor = "pointer";
@@ -60,17 +60,17 @@ function Captcha() {
         }   
         setTimeout(myFunctions,5000); 
   };
-  
+
    return (
     <div class="container">
       <h4 className="text-center mt-4 text-info"><b> Validate Captcha using REACT JS</b></h4>
       <div class="row mt-4">
           <div class="col-md-4">
           </div>
-         
+
           <div class="col-md-8">
             <h4 id="captcha" style={{ marginTop:"162px",marginLeft:"25px",position:"absolute"}}>{captcha}</h4>
-            
+
             <div class="form-group row">
               <img src={studentIMG} className="mt-3 mb-3" height="90"/> <span class="font-weight-bold ml-3"  style={{ marginTop:"50px"}} >Mariah Benchos</span>
             </div>
@@ -82,12 +82,12 @@ function Captcha() {
                 name="username"  onChange={handleChange} autocomplete="off" style={{width:"20%"}}
                 />
               <button type="button" id="succesBTN" onClick={onSubmit} class="btn btn-primary ml-1">Verify Captcha</button>
-            
+
             </div>
-        
+
            </div>
         </div>
       </div>
     );
 }
-export default Captcha;
+export default Captcha; 

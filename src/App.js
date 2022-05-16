@@ -10,7 +10,7 @@ import Team from './component/page/teams';
 import Skills from './component/page/skills';
 import Navbar from './components/Navbar';
  import Registration from './views/register';
-import Addlocalshop from './views/Addlocalshop';
+import Addlocalshop from './views/Add local shop';
 function App() {
 return (
     <Router>
