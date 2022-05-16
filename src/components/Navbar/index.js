@@ -28,12 +28,21 @@ const Navbar = () => {
           <NavLink to="/signup" activeStyle>
             Sign up
             </NavLink>
+<<<<<<< HEAD
             <NavLink to="/euregistration" activeStyle>
             EU
             </NavLink>
             <NavLink to="/Addlocalshop" activeStyle>
             Local Store
             </NavLink>
+=======
+            <NavLink to="/EU" activeStyle>
+              EU
+            </NavLink>
+            <NavLink to="/Addlocalshop" activeStyle>
+              Local Store
+            </NavLink>
+>>>>>>> master
          </NavMenu>
       </Nav>
     </>
