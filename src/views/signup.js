@@ -1,9 +1,13 @@
 import React, { Component } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
+import ReCAPTCHA from "react-google-recaptcha";
 
-export default class SignUp extends Component {
-   
-  
-    render() {
+    const signup = () => {
+        function handleOnChange(value) {
+          console.log("Captcha value: " + value);
+        }
         return (
             <div className="container">
             <form>
@@ -26,7 +30,10 @@ export default class SignUp extends Component {
                         <label className="custom-control-label" htmlFor="customCheck1">Remember me</label>
                     </div>
                 </div>
-
+                <ReCAPTCHA
+                sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                onChange={handleOnChange}
+              />
                 <button type="submit" className="btn btn-primary btn-block">Submit</button>
                 <p className="forgot-password text-right">
                     Forgot <a href="#">password?</a>
@@ -38,5 +45,6 @@ export default class SignUp extends Component {
             </form>
             </div>
         );
-    }
-}
+    };
+    
+     export default signup;
