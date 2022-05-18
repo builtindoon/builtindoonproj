@@ -16,6 +16,7 @@ import EU from './views/eu';
 import Navbar from './components/Navbar';
  import Registration from './views/register';
 import Addlocalshop from './views/Add local shop';
+import State from './views/state';
 function App() {
 return (
     <Router>
@@ -31,6 +32,7 @@ return (
         <Route path='/register' element={<NameForm/>} />
         <Route path='/EU' element={<EU/>} />
         <Route path='/addlocalshop' element={<Addlocalshop/>} />
+        <Route path='/state' element={<State/>} />
     </Routes>   
     </Router>
      );

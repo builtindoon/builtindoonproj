@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { FormCheck, FormLabel } from "react-bootstrap";
-
+import ReCAPTCHA from "react-google-recaptcha";
 class Addlocalshop extends React.Component {
     constructor(props) {
       super(props);
@@ -16,13 +16,13 @@ class Addlocalshop extends React.Component {
     handleShopName(event) {
       event.preventDefault();
     }
-  
-    render() {
+    render(){
       return (
+
         <div className="container">
         <h1>Add local shop </h1>
-       
-        <Form>
+        
+         <Form>
     <Form.Group className="mb-3">
       <Form.Label>Shop Name</Form.Label>
       <Form.Control type="text" />
@@ -33,11 +33,7 @@ class Addlocalshop extends React.Component {
       </Form.Group>
       <Form.Group className="mb-3">
       <Form.Label>State</Form.Label>
-      <select>
-  <option value="IND">India</option>
-  <option value="ALA">Aland Islands</option>
-  <option value="ALB">Albania</option>
-</select>
+      <Form.Select>Dehli,Pune,Mumbai,Bengaluru</Form.Select>
       </Form.Group>
       <Form.Group className="mb-3">
       <Form.Label>District</Form.Label>
@@ -54,14 +50,15 @@ class Addlocalshop extends React.Component {
       </Form.Group>
      
       <>
-      <Form.Label>Delivery Provided</Form.Label>
-  
-     <Form.Check type="radio" aria-label="radio Yes"/>
-    
-     <Form.Check type="radio" aria-label="radio No"/>
+      <Form.Group>
+       <Form.Label>Delivery Provided:</Form.Label>
+       <Form.Check label="yes"/>
+       <Form.Check label="No"/>
+      </Form.Group>
      </>
      <Form.Label>Items to be added</Form.Label>
      <br></br>
+     
      <Button variant="none" type="submit">
      Add Store
    </Button>
@@ -70,8 +67,9 @@ class Addlocalshop extends React.Component {
    </Button>
    </Form>
    </div>
-       )
-     };
- }
-
+       );
+      
+      };
+    }
+    
  export default Addlocalshop;

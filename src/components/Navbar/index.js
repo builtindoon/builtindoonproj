@@ -35,6 +35,7 @@ const Navbar = () => {
             <NavLink to="/Addlocalshop" activeStyle>
             Local Store
             </NavLink>
+<<<<<<< HEAD
 =======
             <NavLink to="/EU" activeStyle>
               EU
@@ -43,6 +44,11 @@ const Navbar = () => {
               Local Store
             </NavLink>
 >>>>>>> master
+=======
+            <NavLink to="/state" activeStyle>
+            state
+            </NavLink>
+>>>>>>> 975c9ab345aa89edfb0afcd40e228d6bb3364b6b
          </NavMenu>
       </Nav>
     </>
