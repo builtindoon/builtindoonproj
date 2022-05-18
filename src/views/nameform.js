@@ -87,10 +87,7 @@ export class NameForm extends React.Component {
          Postal/Zip Code
         </Form.Text>
       </Form.Group>
-      <ReCAPTCHA
-    sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
-    onChange={handleOnChange}
-/>
+     
       <Button variant="none" type="submit">
         Cancel
       </Button>
