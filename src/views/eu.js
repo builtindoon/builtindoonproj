@@ -2,6 +2,10 @@ import React from 'react';
  import "bootstrap/dist/css/bootstrap.min.css";
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import { ReCAPTCHA } from "react-google-recaptcha";
+function handleOnChange(value){
+  console.log("captcha value" +value);
+}
 export class EU extends React.Component {
     constructor(props) {
       super(props);
@@ -91,8 +95,18 @@ export class EU extends React.Component {
 
       <Form.Group>
        <Form.Label>Registered Business:</Form.Label>
-       <Form.Check label="yes"/>
-       <Form.Check label="No"/>
+       <Form.Check 
+      type="radio"
+      name="group1"
+      id={`default-radio`}
+      label={`Yes`}
+    />
+    <Form.Check 
+      type="radio"
+      name="group1"
+      id={`default-radio`}
+      label={`No`}
+      />
       </Form.Group>
 
    <Form.Group className="mb-3">
@@ -109,6 +123,10 @@ export class EU extends React.Component {
     <Form.Label>Registered business Address</Form.Label>
     <Form.Control type="text" />
   </Form.Group>
+  <ReCAPTCHA
+    sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+    onChange={this.handleOnChange}
+/>,
 
       
       <Button variant="none" type="submit">
