@@ -11,6 +11,7 @@ import Skills from './component/page/skills';
 import Navbar from './components/Navbar';
  import Registration from './views/register';
 import Addlocalshop from './views/Add local shop';
+import State from './views/state';
 function App() {
 return (
     <Router>
@@ -25,6 +26,7 @@ return (
         <Route path='/signup' element={<SignUp/>} />
         <Route path='/register' element={<Registration/>} />
         <Route path='/addlocalshop' element={<Addlocalshop/>} />
+        <Route path='/state' element={<State/>} />
     </Routes>   
     </Router>
      );

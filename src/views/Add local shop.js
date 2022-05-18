@@ -16,10 +16,7 @@ class Addlocalshop extends React.Component {
     handleShopName(event) {
       event.preventDefault();
     }
-     Addlocalshop = () => {
-      function handleOnChange(value) {
-        console.log("Captcha value: " + value);
-      }
+    render(){
       return (
 
         <div className="container">
@@ -61,10 +58,7 @@ class Addlocalshop extends React.Component {
      </>
      <Form.Label>Items to be added</Form.Label>
      <br></br>
-      <ReCAPTCHA
-          sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
-          onChange={handleOnChange}
-        />
+     
      <Button variant="none" type="submit">
      Add Store
    </Button>
