@@ -4,6 +4,9 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { FormCheck, FormLabel } from "react-bootstrap";
 import ReCAPTCHA from "react-google-recaptcha";
+function handleOnChange(value) {
+  console.log("Captcha value: " + value);
+}
 class Addlocalshop extends React.Component {
     constructor(props) {
       super(props);
@@ -52,13 +55,26 @@ class Addlocalshop extends React.Component {
       <>
       <Form.Group>
        <Form.Label>Delivery Provided:</Form.Label>
-       <Form.Check label="yes"/>
-       <Form.Check label="No"/>
+       <Form.Check 
+      type="radio"
+      name="group1"
+      id={`default-radio`}
+      label={`Yes`}
+    />
+    <Form.Check 
+      type="radio"
+      name="group1"
+      id={`default-radio`}
+      label={`No`}
+      />
       </Form.Group>
      </>
      <Form.Label>Items to be added</Form.Label>
      <br></br>
-     
+     <ReCAPTCHA
+          sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+          onChange={handleOnChange}
+        />
      <Button variant="none" type="submit">
      Add Store
    </Button>
