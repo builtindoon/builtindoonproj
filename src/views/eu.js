@@ -2,8 +2,7 @@ import React from 'react';
  import "bootstrap/dist/css/bootstrap.min.css";
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import  ReCAPTCHA  from "react-google-recaptcha";
-export class NameForm extends React.Component {
+export class EU extends React.Component {
     constructor(props) {
       super(props);
       this.state = {value: ''};
@@ -24,7 +23,7 @@ export class NameForm extends React.Component {
     render() {
     return (
         <div className="container">
-          <h1>User Registration</h1>
+          <h1>EU Registration</h1>
         <Form>
       <Form.Group className="mb-3">
         <Form.Label>Name</Form.Label>
@@ -87,7 +86,31 @@ export class NameForm extends React.Component {
          Postal/Zip Code
         </Form.Text>
       </Form.Group>
-     
+
+
+
+      <Form.Group>
+       <Form.Label>Registered Business:</Form.Label>
+       <Form.Check label="yes"/>
+       <Form.Check label="No"/>
+      </Form.Group>
+
+   <Form.Group className="mb-3">
+    <Form.Label>GST Number:</Form.Label>
+    <Form.Control type="number" />
+  </Form.Group>
+
+  <Form.Group className="mb-3">
+    <Form.Label>TAN Number:</Form.Label>
+    <Form.Control type="number" />
+  </Form.Group>
+
+  <Form.Group className="mb-3">
+    <Form.Label>Registered business Address</Form.Label>
+    <Form.Control type="text" />
+  </Form.Group>
+
+      
       <Button variant="none" type="submit">
         Cancel
       </Button>
@@ -100,4 +123,4 @@ export class NameForm extends React.Component {
       };
   }
 
-  export default NameForm;
+  export default EU;
