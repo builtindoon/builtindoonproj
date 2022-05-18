@@ -5,7 +5,6 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import ReCAPTCHA from "react-google-recaptcha";
 
-
 function handleOnChange(value) {
     console.log("Captcha value: " + value);
   }
