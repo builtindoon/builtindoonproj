@@ -14,8 +14,8 @@ import Team from './component/page/teams';
 import Skills from './component/page/skills';
 import EU from './views/eu';
 import Navbar from './components/Navbar';
- import Registration from './views/register';
- import NameForm from './views/nameform';
+import Registration from './views/register';
+import NameForm from './views/nameform';
 import Addlocalshop from './views/Add local shop';
 import State from './views/state';
 function App() {
@@ -41,3 +41,5 @@ return (
   
 export default App;
   
+
+
