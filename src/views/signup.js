@@ -3,51 +3,63 @@ import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import ReCAPTCHA from "react-google-recaptcha";
+import Header from "./Header";
+import Footer from "./footer";
 
-function handleOnChange(value) {
-    console.log("Captcha value: " + value);
-  }
-  
- class SignUp extends Component {
-   
-    render() {
+class SignUp extends Component {
+  render() {
+    return (
+        <div>
+        <Header />
+      <div className="container" style={{padding: "30px 0"}}>
+        <form>
+          <h3>Login</h3>
 
-        return (
-            <div className="container">
-            <form>
-                  
-                <h3>Login</h3>
+          <div className="form-group">
+            <label>Email address</label>
+            <input
+              type="email"
+              className="form-control"
+              placeholder="Enter email"
+            />
+          </div>
 
-                <div className="form-group">
-                    <label>Email address</label>
-                    <input type="email" className="form-control" placeholder="Enter email" />
-                </div>
+          <div className="form-group">
+            <label>Password</label>
+            <input
+              type="password"
+              className="form-control"
+              placeholder="Enter password"
+            />
+          </div>
 
-                <div className="form-group">
-                    <label>Password</label>
-                    <input type="password" className="form-control" placeholder="Enter password" />
-                </div>
-
-                <div className="form-group">
-                    <div className="custom-control custom-checkbox">
-                        <input type="checkbox" className="custom-control-input" id="customCheck1" />
-                        <label className="custom-control-label" htmlFor="customCheck1">Remember me</label>
-                    </div>
-                </div>
-
-
-                <button type="submit" className="btn btn-primary btn-block">Submit</button>
-                <p className="forgot-password text-right">
-                    Forgot <a href="#">password?</a>
-                </p>
-                <p className="forgot-password text-right">
-                    Not yet Registered <a href="/register">Register</a>
-                </p>
-               
-            </form>
+          <div className="form-group">
+            <div className="custom-control custom-checkbox">
+              <input
+                type="checkbox"
+                className="custom-control-input"
+                id="customCheck1"
+              />
+              <label className="custom-control-label" htmlFor="customCheck1">
+                Remember me
+              </label>
             </div>
-        );
-    };
+          </div>
+
+          <button type="submit" className="btn btn-primary btn-block">
+            Submit
+          </button>
+          <p className="forgot-password text-right">
+            Forgot <a href="#">password?</a>
+          </p>
+          <p className="forgot-password text-right">
+            Not yet Registered <a href="/register">Register</a>
+          </p>
+        </form>
+      </div>
+      <Footer />
+      </div>
+    );
+  }
 }
 export default SignUp;

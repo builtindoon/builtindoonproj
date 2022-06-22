@@ -3,14 +3,14 @@ import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import ReCAPTCHA from "react-google-recaptcha";
+import Header from "./Header";
+import Footer from "./footer";
 
 const Registration = () => {
-  function handleOnChange(value) {
-    console.log("Captcha value: " + value);
-  }
   return (
-    <div className="container">
+    <div>
+    <Header />
+    <div className="container" style={{padding: "30px 0"}}>
       <h1>User Registration</h1>
       <Form>
         <Form.Group className="mb-3">
@@ -53,10 +53,6 @@ const Registration = () => {
           <Form.Control type="text" />
           <Form.Text className="text-muted">Postal/Zip Code</Form.Text>
         </Form.Group>
-        <ReCAPTCHA
-          sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
-          onChange={handleOnChange}
-        />
         <Button variant="none" type="submit">
           Cancel
         </Button>
@@ -64,6 +60,8 @@ const Registration = () => {
           Register
         </Button>
       </Form>
+    </div>
+    <Footer />
     </div>
   );
 };

@@ -3,15 +3,15 @@ import "../App.css"
 
 export default function Footer() {
   return (
-    <footer className="footer">
-      <div className="container center">
+    <footer className="footer p-4" style={{backgroundColor: "#c5c6d0"}}>
+      <div className="center">
         <ul>
         <li>Facebook</li>
         <li>Google</li>
         <li>Wissen technology</li>
         <li>Pinterest</li>
         </ul>
-        <div className='copy'>@copyright 2022 Prachi</div>
+        <div className='center' style={{width: "200px", marginLeft: "auto", marginRight: "auto"}}>@copyright 2022 Prachi</div>
       </div>
     </footer>
   )
