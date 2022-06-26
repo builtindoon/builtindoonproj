@@ -1,16 +1,11 @@
-import React, { Component } from "react";
+import React from 'react'
+import Footer from './footer'
+import Header from './Header'
 
-import "bootstrap/dist/css/bootstrap.min.css";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
-import Header from "./Header";
-import Footer from "./footer";
-
-class SignUp extends Component {
-  render() {
-    return (
-        <div>
-        <Header />
+export default function SignUp(props) {
+  return (
+    <div>
+        <Header aS={props.aS} />
       <div className="container" style={{padding: "30px 0"}}>
         <form>
           <h3>Login</h3>
@@ -59,7 +54,5 @@ class SignUp extends Component {
       </div>
       <Footer />
       </div>
-    );
-  }
+  )
 }
-export default SignUp;

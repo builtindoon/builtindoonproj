@@ -10,7 +10,7 @@ const Registration = () => {
   return (
     <div>
     <Header />
-    <div className="container" style={{padding: "30px 0"}}>
+    <div className="container" style={{padding: "30px 10px"}}>
       <h1>User Registration</h1>
       <Form>
         <Form.Group className="mb-3">

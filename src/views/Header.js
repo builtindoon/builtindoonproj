@@ -1,8 +1,9 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
+import Navbar from '../views/Navbar'
 
-export default function Header() {
+export default function Header(props) {
   return (
-    <Navbar />
+    <Navbar aH={props.aH} aS={props.aS} />
   )
 }
+ 

@@ -8,8 +8,7 @@ export default function Footer() {
         <ul>
         <li>Facebook</li>
         <li>Google</li>
-        <li>Wissen technology</li>
-        <li>Pinterest</li>
+       <li>Contact us </li>
         </ul>
         <div className='center' style={{width: "200px", marginLeft: "auto", marginRight: "auto"}}>@copyright 2022 Prachi</div>
       </div>

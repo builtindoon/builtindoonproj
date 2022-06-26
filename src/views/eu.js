@@ -26,7 +26,7 @@ export class EU extends React.Component {
     return (
       <div>
       <Header />
-      <div className="container" style={{padding: "30px 0"}}>
+      <div className="container" style={{padding: "30px 10px"}}>
         <h1>EU Registration</h1>
         <Form>
           <Form.Group className="mb-3">

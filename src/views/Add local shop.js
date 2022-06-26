@@ -24,7 +24,7 @@ class Addlocalshop extends React.Component {
     return (
       <div>
         <Header />
-        <div className="container" style={{ padding: "30px 0" }}>
+        <div className="container" style={{ padding: "30px 10px" }}>
           <h1>Add local shop </h1>
 
           <Form>

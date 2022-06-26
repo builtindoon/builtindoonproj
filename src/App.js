@@ -18,21 +18,23 @@ import Registration from './views/register';
 import NameForm from './views/nameform';
 import Addlocalshop from './views/Add local shop';
 import State from './views/state';
+import login from './views/login';
 function App() {
 return (
     <Router>
     <Routes>
-        <Route exact path='/' element={<Home />} />
+        <Route exact path='/' element={<Home aH="active" />} />
         <Route path='/about' element={<About/>} />
         <Route path='/services' element={<Services/>} />
         <Route path='/skills' element={<Skills/>} />
         <Route path='/teams' element={<Team/>} />
         <Route path='/contact' element={<Contact/>} /> 
-        <Route path='/signup' element={<SignUp/>} />
+        <Route path='/signup' element={<SignUp />} />
         <Route path='/register' element={<Registration/>} />
-        <Route path='/EU' element={<EU/>} />
-        <Route path='/addlocalshop' element={<Addlocalshop/>} />
+        <Route path='/EU' element={<EU aE="active" />} />
+        <Route path='/addlocalshop' element={<Addlocalshop aA="active" />} />
         <Route path='/state' element={<State/>} />
+        <Route path='/login' element={<SignUp aS="active" />} />
     </Routes>   
     </Router>
      );
