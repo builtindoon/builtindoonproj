@@ -1,11 +1,13 @@
-import React from 'react';
-  
-const Contact = () => {
+import React from 'react'
+import Footer from './footer'
+import Header from './Header'
+
+export default function contact() {
   return (
     <div>
-      <h1>Mail us on feedback@builtindoon</h1>
+    <Header />
+    <h1 style={{height: "80vh"}}>Contact us at @builtindoon</h1>
+    <Footer />
     </div>
-  );
-};
-  
-export default Contact;
+  )
+}
