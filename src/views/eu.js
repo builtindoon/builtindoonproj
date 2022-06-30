@@ -29,7 +29,7 @@ export class EU extends React.Component {
       <div className="container" style={{padding: "30px 10px"}}>
         <h1>EU Registration</h1>
         <Form>
-          <Form.Group className="mb-3">
+          <Form.Group className="mb-1">
             <Form.Label>Name</Form.Label>
             <Form.Control type="text" />
             <Form.Text className="text-muted">First Name</Form.Text>
@@ -38,7 +38,7 @@ export class EU extends React.Component {
             <Form.Text className="text-muted">Last Name</Form.Text>
           </Form.Group>
 
-          <Form.Group className="mb-3">
+          <Form.Group className="mb-1">
             <Form.Label>Phone Number</Form.Label>
             <Form.Control type="number" />
             <Form.Text className="text-muted">
@@ -46,13 +46,13 @@ export class EU extends React.Component {
             </Form.Text>
           </Form.Group>
 
-          <Form.Group className="mb-3">
+          <Form.Group className="mb-1">
             <Form.Label>Email</Form.Label>
             <Form.Control type="email" />
             <Form.Text className="text-muted">example@example.com</Form.Text>
           </Form.Group>
 
-          <Form.Group className="mb-3">
+          <Form.Group className="mb-1">
             <Form.Label>Address</Form.Label>
             <Form.Control type="text" />
             <Form.Text className="text-muted">Street Address</Form.Text>
@@ -79,17 +79,17 @@ export class EU extends React.Component {
             <Form.Check label="No" />
           </Form.Group>
 
-          <Form.Group className="mb-3">
+          <Form.Group className="mb-1">
             <Form.Label>GST Number:</Form.Label>
             <Form.Control type="number" />
           </Form.Group>
 
-          <Form.Group className="mb-3">
+          <Form.Group className="mb-1">
             <Form.Label>TAN Number:</Form.Label>
             <Form.Control type="number" />
           </Form.Group>
 
-          <Form.Group className="mb-3">
+          <Form.Group className="mb-1">
             <Form.Label>Registered business Address</Form.Label>
             <Form.Control type="text" />
           </Form.Group>

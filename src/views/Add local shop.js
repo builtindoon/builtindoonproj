@@ -28,15 +28,15 @@ class Addlocalshop extends React.Component {
           <h1>Add local shop </h1>
 
           <Form>
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-1">
               <Form.Label>Shop Name</Form.Label>
               <Form.Control type="text" />
             </Form.Group>
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-1">
               <Form.Label>Shop Address</Form.Label>
               <Form.Control type="text" />
             </Form.Group>
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-1">
               <Form.Label>State</Form.Label>
               <Form.Select defaultValue="State...">
                 <option>State...</option>
@@ -46,7 +46,7 @@ class Addlocalshop extends React.Component {
                 <option value="4">Bangaluru</option>
               </Form.Select>
             </Form.Group>
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-1">
               <Form.Label>District</Form.Label>
               <Form.Select defaultValue="State...">
                 <option>District...</option>
@@ -55,12 +55,12 @@ class Addlocalshop extends React.Component {
                 <option value="3">Lucknow</option>
               </Form.Select>
             </Form.Group>
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-1">
               <Form.Label>Pincode</Form.Label>
               <Form.Control type="text" />
             </Form.Group>
 
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-1">
               <Form.Label>Landmark</Form.Label>
               <Form.Control type="text" />
             </Form.Group>
