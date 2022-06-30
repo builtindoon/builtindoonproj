@@ -1,15 +1,14 @@
 import React from "react";
 import Footer from "./footer";
 import Header from "./Header";
-
-const Services = () => {
+function About() {
   return (
     <div>
       <Header />
-      <h1 style={{ height: "80vh" }}>hello services</h1>
+      <div style={{height: "80vh"}}>About</div>
       <Footer />
     </div>
   );
-};
+}
 
-export default Services;
+export default About;

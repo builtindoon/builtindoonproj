@@ -1,11 +1,13 @@
-import React from 'react';
+import React from "react";
+import Footer from "./footer";
+import Header from "./Header";
 
-const Skills = () =>{
-    return(
-        <div>
-            <h1>skills</h1>
-        </div>
-    );
-};
-
-export default Skills;
+export default function Skills() {
+  return (
+    <div>
+      <Header />
+      <h1 style={{ height: "80vh" }}>Skills</h1>
+      <Footer />
+    </div>
+  );
+}

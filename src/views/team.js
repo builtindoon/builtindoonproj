@@ -1,13 +1,13 @@
+import React from 'react'
+import Footer from './footer'
+import Header from './Header'
 
-
-import React from 'react';
-
-const Teams = () =>{
-    return(
-        <div>
-            <h1>teams </h1>
-        </div>
-    );
-};
-
-export default Teams;
+export default function Team() {
+  return (
+    <div>
+    <Header />
+    <h1 style={{height: "80vh"}}>Teams</h1>
+    <Footer />
+    </div>
+  )
+}
