@@ -10,7 +10,7 @@ import About from './views/About';
 import Services from './views/services';
 import SignUp from './views/signup';
 import Contact from './views/contact';
-import Team from './views/team';
+import Team from './views/Team';
 import Skills from './views/Skills';
 import EU from './views/eu';
 import Navbar from './components/Navbar';

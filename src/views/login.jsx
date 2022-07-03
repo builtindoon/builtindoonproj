@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 export default class SignUp extends Component {
   render() {
     return (
       <form>
         <h3>Sign Up</h3>
-        <div className="mb-3">
+        <div className="mb-1">
           <label>First name</label>
           <input
             type="text"
@@ -12,11 +12,11 @@ export default class SignUp extends Component {
             placeholder="First name"
           />
         </div>
-        <div className="mb-3">
+        <div className="mb-1">
           <label>Last name</label>
           <input type="text" className="form-control" placeholder="Last name" />
         </div>
-        <div className="mb-3">
+        <div className="mb-1">
           <label>Email address</label>
           <input
             type="email"
@@ -24,7 +24,7 @@ export default class SignUp extends Component {
             placeholder="Enter email"
           />
         </div>
-        <div className="mb-3">
+        <div className="mb-1">
           <label>Password</label>
           <input
             type="password"
@@ -38,9 +38,9 @@ export default class SignUp extends Component {
           </button>
         </div>
         <p className="forgot-password text-right">
-          Already registered <a href="/sign-in">sign in?</a>
+          registered <a href="/sign-in">sign in?</a>
         </p>
       </form>
-    )
+    );
   }
 }
