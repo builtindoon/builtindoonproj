@@ -18,7 +18,7 @@ export default function Navbar(props) {
         <a href="about">About</a>
         <a href="services">Blogs</a>
         <a href="skills">Skills</a>
-        <a href="team">Team</a>
+        <a href="teams">Team</a>
         <a href="contact">Contact</a>
       </div>
       <span style={{fontSize: "30px",cursor: "pointer", color: "#ffffff"}} onClick={changeStyle}>&#9776;&nbsp;&nbsp;</span>

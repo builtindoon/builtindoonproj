@@ -88,7 +88,7 @@ export class NameForm extends React.Component {
         </Form.Text>
       </Form.Group>
      
-      <Button variant="none" type="submit">
+      <Button variant="none" type="cancel">
         Cancel
       </Button>
       <Button variant="success" type="submit">

@@ -25,84 +25,116 @@ export class EU extends React.Component {
   render() {
     return (
       <div>
-      <Header />
-      <div className="container" style={{padding: "30px 10px"}}>
-        <h1>EU Registration</h1>
-        <Form>
-          <Form.Group className="mb-1">
-            <Form.Label>Name</Form.Label>
-            <Form.Control type="text" />
-            <Form.Text className="text-muted">First Name</Form.Text>
+        <Header />
+        <div className="container" style={{ padding: "30px 10px" }}>
+          <div className="row">
+            <div className="col-md-3"></div>
+            <div className="col-md-6">
+              <h1>EU Registration</h1>
+              <Form className="form-horizontal">
+                <Form.Group className="mb-1" style={{ display: "flex" }}>
+                  <Form.Label className="control-label col-sm-2">
+                    Name 
+                  </Form.Label>
+                  <div className="col-sm-10">
+                    <Form.Control type="text" />
+                  </div>
+                </Form.Group>
+                <Form.Group className="mb-1" style={{ display: "flex" }}>
+                  <Form.Label className="control-label col-sm-2">
+                    Phone Number 
+                  </Form.Label>
+                  <div className="col-sm-10">
+                    <Form.Control type="number" />
+                  </div>
+                </Form.Group>
 
-            <Form.Control type="text" />
-            <Form.Text className="text-muted">Last Name</Form.Text>
-          </Form.Group>
+                <Form.Group className="mb-1" style={{ display: "flex" }}>
+                  <Form.Label className="control-label col-sm-2">
+                    Email 
+                  </Form.Label>
+                  <div className="col-sm-10">
+                    <Form.Control type="email" />
+                  </div>
+                </Form.Group>
 
-          <Form.Group className="mb-1">
-            <Form.Label>Phone Number</Form.Label>
-            <Form.Control type="number" />
-            <Form.Text className="text-muted">
-              Please enter valid phone number
-            </Form.Text>
-          </Form.Group>
+                <Form.Group className="mb-1" style={{ display: "flex" }}>
+                  <Form.Label className="control-label col-sm-2">
+                    Address 
+                  </Form.Label>
+                  <div className="col-sm-10">
+                    <Form.Control type="text" placeholder="Street Address" />
 
-          <Form.Group className="mb-1">
-            <Form.Label>Email</Form.Label>
-            <Form.Control type="email" />
-            <Form.Text className="text-muted">example@example.com</Form.Text>
-          </Form.Group>
+                    <Form.Control
+                      type="text"
+                      placeholder="Street Address Line 2"
+                    />
 
-          <Form.Group className="mb-1">
-            <Form.Label>Address</Form.Label>
-            <Form.Control type="text" />
-            <Form.Text className="text-muted">Street Address</Form.Text>
+                    <Form.Control type="text" placeholder="City" />
 
-            <Form.Control type="text" />
-            <Form.Text className="text-muted">Street Address Line 2</Form.Text>
+                    <Form.Control type="text" placeholder="State/Province" />
 
-            <Form.Control type="text" />
-            <Form.Text className="text-muted">City</Form.Text>
+                    <Form.Control type="text" placeholder="Postal/Zip Code" />
+                  </div>
+                </Form.Group>
 
-            <Form.Control type="text" />
-            <Form.Text className="text-muted">State/Province</Form.Text>
+                <Form.Group className="mb-1" style={{ display: "flex" }}>
+                  <Form.Label className="control-label col-sm-2">
+                    Registered Business 
+                  </Form.Label>
+                  <Form.Check
+                    type="radio"
+                    name="prachi"
+                    style={{ marginLeft: "30px" }}
+                    label="yes"
+                  />
+                  <Form.Check
+                    type="radio"
+                    name="prachi"
+                    style={{ marginLeft: "30px" }}
+                    label="No"
+                  />
+                </Form.Group>
 
-            <Form.Control type="text" />
-            <Form.Text className="text-muted">Postal/Zip Code</Form.Text>
+                <Form.Group className="mb-1" style={{ display: "flex" }}>
+                  <Form.Label className="control-label col-sm-2">
+                    GST Number 
+                  </Form.Label>
+                  <div className="col-sm-10">
+                    <Form.Control type="number" />
+                  </div>
+                </Form.Group>
 
-            <Form.Control type="text" />
-            <Form.Text className="text-muted">Postal/Zip Code</Form.Text>
-          </Form.Group>
+                <Form.Group className="mb-3" style={{ display: "flex" }}>
+                  <Form.Label className="control-label col-sm-2">
+                    TAN Number 
+                  </Form.Label>
+                  <div className="col-sm-10">
+                    <Form.Control type="number" />
+                  </div>
+                </Form.Group>
 
-          <Form.Group>
-            <Form.Label>Registered Business:</Form.Label>
-            <Form.Check label="yes" />
-            <Form.Check label="No" />
-          </Form.Group>
+                <Form.Group className="mb-3" style={{ display: "flex" }}>
+                  <Form.Label className="control-label col-sm-2">
+                    Registered business Address 
+                  </Form.Label>
+                  <div className="col-sm-10">
+                    <Form.Control type="text" />
+                  </div>
+                </Form.Group>
 
-          <Form.Group className="mb-1">
-            <Form.Label>GST Number:</Form.Label>
-            <Form.Control type="number" />
-          </Form.Group>
-
-          <Form.Group className="mb-1">
-            <Form.Label>TAN Number:</Form.Label>
-            <Form.Control type="number" />
-          </Form.Group>
-
-          <Form.Group className="mb-1">
-            <Form.Label>Registered business Address</Form.Label>
-            <Form.Control type="text" />
-          </Form.Group>
-
-          <Button variant="none" type="submit">
-            Cancel
-          </Button>
-          <Button variant="success" type="submit">
-            Register
-          </Button>
-        </Form>
-      </div>
-      <Footer />
+                <Button variant="none" type="submit">
+                  Cancel
+                </Button>
+                <Button variant="success" type="submit">
+                  Register
+                </Button>
+              </Form>
+            </div>
+            <div className="col-md-3"></div>
+          </div>
+        </div>
+        <Footer />
       </div>
     );
   }

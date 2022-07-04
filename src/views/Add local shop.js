@@ -25,73 +25,93 @@ class Addlocalshop extends React.Component {
       <div>
         <Header />
         <div className="container" style={{ padding: "30px 10px" }}>
-          <h1>Add local shop </h1>
+          <div className="row">
+            <div className="col-md-3"></div>
+            <div className="col-md-6">
+              <h1>Add local shop </h1>
 
-          <Form>
-            <Form.Group className="mb-1">
-              <Form.Label>Shop Name</Form.Label>
-              <Form.Control type="text" />
-            </Form.Group>
-            <Form.Group className="mb-1">
-              <Form.Label>Shop Address</Form.Label>
-              <Form.Control type="text" />
-            </Form.Group>
-            <Form.Group className="mb-1">
-              <Form.Label>State</Form.Label>
-              <Form.Select defaultValue="State...">
-                <option>State...</option>
-                <option value="1">Delhi</option>
-                <option value="2">Pune</option>
-                <option value="3">Mumbai</option>
-                <option value="4">Bangaluru</option>
-              </Form.Select>
-            </Form.Group>
-            <Form.Group className="mb-1">
-              <Form.Label>District</Form.Label>
-              <Form.Select defaultValue="State...">
-                <option>District...</option>
-                <option value="1">Bihar</option>
-                <option value="2">Dehradun</option>
-                <option value="3">Lucknow</option>
-              </Form.Select>
-            </Form.Group>
-            <Form.Group className="mb-1">
-              <Form.Label>Pincode</Form.Label>
-              <Form.Control type="text" />
-            </Form.Group>
+              <Form className="form-horizontal" >
+                <Form.Group className="mb-1"   style={{ display: "flex" }} >
+                  <Form.Label className="control-label col-sm-2">Shop Name</Form.Label>
+                  <div className="col-sm-10">
+                  <Form.Control type="text" />
+                  </div>
+                </Form.Group>
+                <Form.Group className="mb-1"   style={{ display: "flex" }} >
+                  <Form.Label className="control-label col-sm-2">Shop Address</Form.Label>
+                  <div className="col-sm-10">
+                  <Form.Control type="text" />
+                  </div>
+                </Form.Group>
+                <Form.Group className="mb-1"   style={{ display: "flex" }} >
+                  <Form.Label className="control-label col-sm-2">State</Form.Label>
+                  <div className="col-sm-10">
+                  <Form.Select defaultValue="State...">
+                    <option>State...</option>
+                    <option value="1">Delhi</option>
+                    <option value="2">Pune</option>
+                    <option value="3">Mumbai</option>
+                    <option value="4">Bangaluru</option>
+                  </Form.Select>
+                  </div>
+                </Form.Group>
+                <Form.Group className="mb-1"   style={{ display: "flex" }} >
+                  <Form.Label className="control-label col-sm-2">District</Form.Label>
+                  <div className="col-sm-10">
+                  <Form.Select defaultValue="State...">
+                    <option>District...</option>
+                    <option value="1">Bihar</option>
+                    <option value="2">Dehradun</option>
+                    <option value="3">Lucknow</option>
+                  </Form.Select>
+                  </div>
+                </Form.Group>
+                <Form.Group className="mb-1"   style={{ display: "flex" }} >
+                  <Form.Label className="control-label col-sm-2">Pincode</Form.Label>
+                  <div className="col-sm-10">
+                  <Form.Control type="text" />
+                  </div>
+                </Form.Group>
 
-            <Form.Group className="mb-1">
-              <Form.Label>Landmark</Form.Label>
-              <Form.Control type="text" />
-            </Form.Group>
+                <Form.Group className="mb-1"   style={{ display: "flex" }} >
+                  <Form.Label className="control-label col-sm-2">Landmark</Form.Label>
+                  <div className="col-sm-10">
+                  <Form.Control type="text" />
+                  </div>
+                </Form.Group>
 
-            <>
-              <Form.Group>
-                <Form.Label>Delivery Provided:</Form.Label>
-                <Form.Check
-                  type="radio"
-                  name="group1"
-                  id={`default-radio`}
-                  label={`Yes`}
-                />
-                <Form.Check
-                  type="radio"
-                  name="group1"
-                  id={`default-radio`}
-                  label={`No`}
-                />
-              </Form.Group>
-            </>
-            <Form.Label>Items to be added</Form.Label>
-            <br></br>
+                <>
+                <Form.Group className="mb-1"   style={{ display: "flex" }} >
+                    <Form.Label className="control-label col-sm-2">Delivery Provided:</Form.Label>
+                    <div className="col-sm-10">
+                    <Form.Check
+                      type="radio"
+                      name="group1"
+                      id={`default-radio`}
+                      label={`Yes`}
+                    />
+                    <Form.Check
+                      type="radio"
+                      name="group1"
+                      id={`default-radio`}
+                      label={`No`}
+                    />
+                    </div>
+                  </Form.Group>
+                </>
+                <Form.Label className="control-label col-sm-2">Items to be added</Form.Label>
+                <br></br>
 
-            <Button variant="none" type="submit">
-              Add Store
-            </Button>
-            <Button variant="success" type="submit">
-              Cancel
-            </Button>
-          </Form>
+                <Button variant="none" type="submit">
+                  Add Store
+                </Button>
+                <Button variant="success" type="submit">
+                  Cancel
+                </Button>
+              </Form>
+            </div>
+            <div className="col-md-3"></div>
+          </div>
         </div>
         <Footer />
       </div>
