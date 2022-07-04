@@ -10,7 +10,7 @@ export default function Footer() {
         <li>Google</li>
        <li>Contact us </li>
         </ul>
-        <div className='center' style={{width: "200px", marginLeft: "auto", marginRight: "auto"}}>@copyright 2022 Prachi</div>
+        <div className='center' style={{width: "200px", marginLeft: "auto", marginRight: "auto"}}>@ 2022 BuiltInDoon</div>
       </div>
     </footer>
   )

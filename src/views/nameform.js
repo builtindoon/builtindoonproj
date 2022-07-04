@@ -26,7 +26,7 @@ export class NameForm extends React.Component {
         <div className="container">
           <h1>User Registration</h1>
         <Form>
-      <Form.Group className="mb-3">
+      <Form.Group className="mb-1">
         <Form.Label>Name</Form.Label>
         <Form.Control type="text" />
         <Form.Text className="text-muted">
@@ -39,7 +39,7 @@ export class NameForm extends React.Component {
         </Form.Text>
       </Form.Group>
     
-      <Form.Group className="mb-3">
+      <Form.Group className="mb-1">
         <Form.Label>Phone Number</Form.Label>
         <Form.Control type="number" />
         <Form.Text className="text-muted">
@@ -47,7 +47,7 @@ export class NameForm extends React.Component {
         </Form.Text>
       </Form.Group>
     
-      <Form.Group className="mb-3">
+      <Form.Group className="mb-1">
         <Form.Label>Email</Form.Label>
         <Form.Control type="email" />
         <Form.Text className="text-muted">
@@ -55,7 +55,7 @@ export class NameForm extends React.Component {
         </Form.Text>
       </Form.Group>
     
-      <Form.Group className="mb-3">
+      <Form.Group className="mb-1">
         <Form.Label>Address</Form.Label>
         <Form.Control type="text" />
         <Form.Text className="text-muted">
